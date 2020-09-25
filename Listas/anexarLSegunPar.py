@@ -1,15 +1,9 @@
 def skip_elements(elements):
     # Initialize variables
     new_list = []
-    i = 0
-    # Iterate through the list
-    for element in elements:
-        # Does this element belong in the resulting list?
-        if i % 2 == 0:
-            new_list.append(elements[i])
-            # Add this element to the resulting list
-        # Increment i
-        i += 1
+    for index, element in enumerate(elements):
+        if index % 2 == 0:
+            new_list.append(element)
     return new_list
 
 
